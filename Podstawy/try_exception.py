@@ -6,7 +6,7 @@ try:
     result = numerator / denominator
 except ZeroDivisionError as e:
     print("U cant divide by zero idiot")
-except  ValueError as e:
+except ValueError as e:
     print("Enter only numbers pls")
 except Exception as e:
     print(e)
