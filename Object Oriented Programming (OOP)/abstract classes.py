@@ -9,17 +9,16 @@ from abc import ABC, abstractmethod
 class Vehicle(ABC):
     @abstractmethod
     def go(self):
-        pass
-
+        print("You drive the car")
     @abstractmethod
     def stop(self):
-        pass
-class Car(Vehicle):
+        print(2+2)
+class Car(Vehicle): #overreading
     def go(self):
         print("You drive the car")
     def stop(self):
         print("This car is stopped")
-class Motorcycle(Vehicle):
+class Motorcycle(Vehicle):#overreading
     def go(self):
         print("You ride the motorcycle")
     def stop(self):
