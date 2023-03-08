@@ -5,7 +5,7 @@
 class Car:
     wheels = 4  # class variable, default value for all instance of this class
 
-    def __init__(self, make, model, year, color):  # this method construct object for us (constractor)
+    def __init__(self, make, model, year, color):  # this METHOD construct object for us (constractor)
         self.make = make  # assign these object to an attributes
         self.model = model  # instance variable
         self.year = year  # instance variable
