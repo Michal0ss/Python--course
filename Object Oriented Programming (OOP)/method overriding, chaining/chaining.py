@@ -4,25 +4,29 @@
 class Car:
     def turn_on(self):
         print("You start the engine")
-        return self # because method chaining wont work if it doesnt return anything
+        return self  # because method chaining won't work if it doesn't return anything
+
     def drive(self):
         print("You drive the car")
         return self
+
     def brake(self):
         print("You step on the brakes")
         return self
+
     def turn_off(self):
         print("You turn off the engine")
         return self
 
+
 car = Car()
-#car.turn_on()
-#car.drive()
+# car.turn_on()
+# car.drive()
 car.turn_on().drive()
 
 car.brake().turn_off()
 
-car.turn_on()\
-    .drive()\
-    .brake()\
+car.turn_on() \
+    .drive() \
+    .brake() \
     .turn_off()
