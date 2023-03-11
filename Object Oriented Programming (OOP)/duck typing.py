@@ -5,21 +5,28 @@
 class Duck():
     def walk(self):
         print("this duck is walking")
+
     def talk(self):
         print("this duck is qwuacking")
+
+
 class Chicken():
     def walk(self):
         print("this chicken is walking")
+
     def talk(self):
         print("this chicken is qwuacking")
+
+
 class Person():
     def cath(self, duck):
         duck.walk()
         duck.talk()
         print("You caught the critter!")
 
+
 duck = Duck()
-chicken = Chicken ()
+chicken = Chicken()
 person = Person()
 
 person.cath(chicken)
