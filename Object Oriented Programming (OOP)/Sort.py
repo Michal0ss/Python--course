@@ -19,8 +19,9 @@ students1 = (
 
 # grade = lambda grades: grades[1]  # that variable helps with sorting our iterables by the second column
 age = lambda ages: ages[2]
+#dog = lambda ages: ages[2]+7
 #students1.sort(key=age, reverse=True)  # sort method only belongs to lists
-sorted_students1 = sorted (students1, key =age, reverse=True) # for tuple
-
+sorted_students1 = sorted(students1, key=age, reverse=True)  # for tuple
+#dog_years = list(map(dog, students1))
 for i in sorted_students1:
     print(i)
