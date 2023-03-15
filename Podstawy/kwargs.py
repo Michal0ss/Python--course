@@ -8,4 +8,4 @@ def hello(**kwargs):
         print(value, end=" ")
 
 
-hello(title = "3", last=6, middle=2*3, first="Code") #keyword arguments
+hello(title = "3", last=5, middle=2*3, first="Code") #keyword arguments

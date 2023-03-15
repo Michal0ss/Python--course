@@ -24,3 +24,4 @@ class Pyramid:
             for k in range(0, i - 1):
                 print(i, end="")
             print(int(i / 10))
+#.............................
