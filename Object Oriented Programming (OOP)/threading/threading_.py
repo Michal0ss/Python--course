@@ -30,15 +30,20 @@ def study():
 x = threading.Thread(target=eat_breakfast, args=())
 x.start()
 
-y = threading.Thread(target=drink_coffe(), args=())
+y = threading.Thread(target=drink_coffe, args=())
 y.start()
 
-z = threading.Thread(target=study(), args=())
+z = threading.Thread(target=study, args=())
 z.start()
 
+print(threading.active_count())  # amount of threads running right now
+print(threading.enumerate())  # which thread
+print(time.perf_counter())
+
+x.join()
+y.join()
+z.join()
 # eat_breakfast()
 # drink_coffe()
 # study()
 
-print(threading.active_count())  # amount of threads running right now
-print(threading.enumerate())  # which thread
